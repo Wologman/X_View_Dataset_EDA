@@ -1,0 +1,36 @@
+# Forked from here: https://github.com/jorisvandenbossche/DS-python-geospatial/blob/main/environment.yml
+# Usage: conda env create -f geoExplore_environment.yml
+# Also consider using libmamba if this isn't working.  https://www.anaconda.com/blog/a-faster-conda-for-a-growing-community
+name: geoExplore
+channels:
+  - conda-forge
+  - anaconda
+  - menpo
+  - defaults
+dependencies:
+  - python>=3.10
+  - ipython
+  - jupyter
+  - numpy
+  - pandas
+  - geopandas
+  - rasterio
+  - rasterstats
+  # pinning to avoid compat issue with cartopy (https://github.com/jorisvandenbossche/course-python-geospatial/issues/21)
+  - matplotlib=3.5
+  - cartopy
+  - contextily
+  - geoplot
+  - dask
+  - distributed
+  - dask-labextension
+  - ipyleaflet
+  - folium
+  - Pillow>=7.1.2
+  - seaborn
+  - scipy>=1.4.1
+  - tqdm>=4.41.0
+  - geoviews
+  - h5py
+  - opencv
+  - pip
